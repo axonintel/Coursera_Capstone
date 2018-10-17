@@ -74,7 +74,14 @@
             "metadata": {}
         }, 
         {
-            "source": "display(Image(data=streaming_body_4.read()))", 
+            "source": "\nimport sys\nimport types\nimport pip\n\nif not('ibm-cos-sdk' in [package.project_name for package in pip.get_installed_distributions()]):\n    !pip install ibm-cos-sdk==2.0.0 -q\n\nimport pandas as pd\nfrom botocore.client import Config\nimport ibm_boto3\n\ndef __iter__(self): return 0\n\n# @hidden_cell\n# The following code accesses a file in your IBM Cloud Object Storage. It includes your credentials.\n# You might want to remove those credentials before you share your notebook.\nclient_662ce83bb7d64302b35c576c37502c9f = ibm_boto3.client(service_name='s3',\n    ibm_api_key_id=apikey,\n    ibm_auth_endpoint=\"https://iam.ng.bluemix.net/oidc/token\",\n    config=Config(signature_version='oauth'),\n    endpoint_url='https://s3-api.us-geo.objectstorage.service.networklayer.com')\n\n# Your data file was loaded into a botocore.response.StreamingBody object.\n# Please read the documentation of ibm_boto3 and pandas to learn more about your possibilities to load the data.\n# ibm_boto3 documentation: https://ibm.github.io/ibm-cos-sdk-python/\n# pandas documentation: http://pandas.pydata.org/\nstreaming_body_6 = client_662ce83bb7d64302b35c576c37502c9f.get_object(Bucket='datascience-donotdelete-pr-rtc5zpexpyas92', Key='neighborhoods.PNG')['Body']\n# add missing __iter__ method, so pandas accepts body as file-like object\nif not hasattr(streaming_body_6, \"__iter__\"): streaming_body_6.__iter__ = types.MethodType( __iter__, streaming_body_6 ) ", 
+            "cell_type": "code", 
+            "metadata": {}, 
+            "outputs": [], 
+            "execution_count": 9
+        }, 
+        {
+            "source": "from IPython.display import Image,display\ndisplay(Image(data=streaming_body_6.read()))", 
             "cell_type": "code", 
             "metadata": {}, 
             "outputs": [
@@ -87,7 +94,7 @@
                     "metadata": {}
                 }
             ], 
-            "execution_count": 32
+            "execution_count": 10
         }, 
         {
             "source": "### Venues, Coffee Shops & Ratings", 
@@ -110,7 +117,14 @@
             "metadata": {}
         }, 
         {
-            "source": "display(Image(data=streaming_body_3.read()))", 
+            "source": "\n# Your data file was loaded into a botocore.response.StreamingBody object.\n# Please read the documentation of ibm_boto3 and pandas to learn more about your possibilities to load the data.\n# ibm_boto3 documentation: https://ibm.github.io/ibm-cos-sdk-python/\n# pandas documentation: http://pandas.pydata.org/\nstreaming_body_7 = client_662ce83bb7d64302b35c576c37502c9f.get_object(Bucket='datascience-donotdelete-pr-rtc5zpexpyas92', Key='coffeeShopsLocation.png')['Body']\n# add missing __iter__ method so pandas accepts body as file-like object\nif not hasattr(streaming_body_7, \"__iter__\"): streaming_body_7.__iter__ = types.MethodType( __iter__, streaming_body_7 ) \n\n", 
+            "cell_type": "code", 
+            "metadata": {}, 
+            "outputs": [], 
+            "execution_count": 11
+        }, 
+        {
+            "source": "from IPython.display import Image,display\ndisplay(Image(data=streaming_body_7.read()))", 
             "cell_type": "code", 
             "metadata": {}, 
             "outputs": [
@@ -123,7 +137,7 @@
                     "metadata": {}
                 }
             ], 
-            "execution_count": 34
+            "execution_count": 12
         }, 
         {
             "source": "### Clustering", 
@@ -166,7 +180,14 @@
             "metadata": {}
         }, 
         {
-            "source": "display(Image(data=streaming_body_2.read()))", 
+            "source": "\n# Your data file was loaded into a botocore.response.StreamingBody object.\n# Please read the documentation of ibm_boto3 and pandas to learn more about your possibilities to load the data.\n# ibm_boto3 documentation: https://ibm.github.io/ibm-cos-sdk-python/\n# pandas documentation: http://pandas.pydata.org/\nstreaming_body_8 = client_662ce83bb7d64302b35c576c37502c9f.get_object(Bucket='datascience-donotdelete-pr-rtc5zpexpyas92', Key='coffeeShopsClusters.png')['Body']\n# add missing __iter__ method so pandas accepts body as file-like object\nif not hasattr(streaming_body_8, \"__iter__\"): streaming_body_8.__iter__ = types.MethodType( __iter__, streaming_body_8 ) \n\n", 
+            "cell_type": "code", 
+            "metadata": {}, 
+            "outputs": [], 
+            "execution_count": 13
+        }, 
+        {
+            "source": "from IPython.display import Image,display\ndisplay(Image(data=streaming_body_8.read()))", 
             "cell_type": "code", 
             "metadata": {}, 
             "outputs": [
@@ -179,7 +200,7 @@
                     "metadata": {}
                 }
             ], 
-            "execution_count": 36
+            "execution_count": 14
         }, 
         {
             "source": "## Results ", 
@@ -307,7 +328,7 @@
             "metadata": {}
         }, 
         {
-            "source": "display(Image(data=streaming_body_1.read()))", 
+            "source": "from IPython.display import Image,display\ndisplay(Image(data=streaming_body_5.read()))", 
             "cell_type": "code", 
             "metadata": {}, 
             "outputs": [
@@ -320,7 +341,7 @@
                     "metadata": {}
                 }
             ], 
-            "execution_count": 38
+            "execution_count": 7
         }, 
         {
             "source": "### Coffee Shop Ratings", 
