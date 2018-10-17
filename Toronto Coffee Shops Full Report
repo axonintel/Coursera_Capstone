@@ -269,7 +269,6 @@
         {
             "source": "| Venue                       | Total | Mean Rating |\n|-----------------------------|-------|-------------|\n| Tim Hortons                 | 5     | 6.44        |\n| Starbucks                   | 2     | 6.75        |\n| Aroma Espresso Bar          | 1     | 6.8         |\n| Maxim's Cafe and Patisserie | 1     | 6.7         |\n| The Birchcliff              | 1     | 8.2         |", 
             "cell_type": "markdown", 
-            "attachments": {}, 
             "metadata": {}
         }, 
         {
@@ -359,7 +358,7 @@
             "metadata": {}
         }, 
         {
-            "source": "We started this analysis by knowing nothing about coffee shops in Toronto. After studying the neighborhoods and collecting all coffee shop details from Foursquare API, we can better visualize and cluster Toronto's coffee shop locations based on their surroundings. \n\nAfter analyzing coffee shop ratings, total locations and surroundings, we were able to identify five clusters with several coffee shop brands that compete with famous names like Starbucks or Tim Hortons.\nSo, Starbucks or Tim Hortons? It is not a yes or no answer. An enterpreneur wishing to open a coffee shop in Toronto can open any brand name. They just need to know how competant they are and choose the location based on it. They also need to study the diversity metrics of each cluster and use that to their advantage in selecting what people like to see in their neighborhoods.", 
+            "source": "We started this analysis by knowing nothing about coffee shops in Toronto. After studying the neighborhoods and collecting all coffee shop details from Foursquare API, we can better visualize and cluster Toronto's coffee shop locations based on their surroundings. \n\nAfter analyzing coffee shop ratings, total locations and surroundings, we were able to identify five clusters with several coffee shop brands that compete with famous names like Starbucks or Tim Hortons.\nSo, Starbucks or Tim Hortons? It is not a yes or no answer. An entrepreneur wishing to open a coffee shop in Toronto can open any brand name. They just need to know how competent they are and choose the location based on it. They also need to study the diversity metrics of each cluster and use that to their advantage in selecting what people like to see in their neighborhoods.", 
             "cell_type": "markdown", 
             "metadata": {}
         }, 
