@@ -187,7 +187,7 @@
             "metadata": {}
         }, 
         {
-            "source": "Samples from the cluster results that were identified are listed below. \n\n**  It is recommended to look at the visual in the poweroint to clearly realize how well the clustering went. The method identified clusters that are downtown, east and west toronto, plus two clusters that are borders and closer to the airport\n\nIn summary you can notice that **Cluster 0 (Downtown)** is the one which has the highest density of coffee shops. It also has the best rated coffee shops in Toronto.", 
+            "source": "Samples from the cluster results that were identified are listed below. \n\n**  It is recommended to look at the visual in the above image to clearly realize how well the clustering went. The method identified clusters that are downtown, east and west toronto, plus two clusters that are borders and closer to the airport\n\nIn summary you can notice that **Cluster 0 (Downtown)** is the one which has the highest density of coffee shops. It also has the best rated coffee shops in Toronto.", 
             "cell_type": "markdown", 
             "metadata": {}
         }, 
@@ -303,6 +303,11 @@
             "metadata": {}
         }, 
         {
+            "source": "Alright, so we identified the top 5 coffee shops in each cluster. Let's take out two important features of these coffee shops which are the total number of shops available and the mean rating of each. \n\nBelow is a bar plot that summarizes our findings. The top five coffee shops for each cluster are plotted. Along the y axis, we plotted the number of coffee shops open for each name alongside its respective rating.", 
+            "cell_type": "markdown", 
+            "metadata": {}
+        }, 
+        {
             "source": "display(Image(data=streaming_body_1.read()))", 
             "cell_type": "code", 
             "metadata": {}, 
@@ -324,7 +329,7 @@
             "metadata": {}
         }, 
         {
-            "source": "| Cluster Labels | Coffee Shop Mean Rating |\n|----------------|-------------------------|\n| 0              | 8.024211                |\n| 1              | 6.128571                |\n| 2              | 7.040909                |\n| 3              | 6.74                    |\n| 4              | 7.09375                 |", 
+            "source": "Let analyze the ratings porfile of each cluster to understand our competition in each area. \nIf an entrepreneur wants to open a coffee shop in Downtown Toronto, they'd be better equipped to compete with high consumer ratings which mark the best coffee shops in Toronto as a whole.\n\nCluster one seems to be the area where coffee shops have lower ratings, openning a coffee shop in cluster 1 with a brand name that is highly rated in cluster 0 appears to be a good idea too.\n\nCluster 2 has 6 starbucks locations with adequate rating of 7.17. You may also notice that Tim Hortons is not showing up with good ratings compared to other coffee shops.\n", 
             "cell_type": "markdown", 
             "metadata": {}
         }, 
@@ -334,17 +339,17 @@
             "metadata": {}
         }, 
         {
-            "source": "", 
+            "source": "An interesting fact to note down is that downtown's top 5 coffee shops do not include Starbucks nor Tim Hortons. That tells us that good coffee shops do compete with famous brands. \n\nFor investors who think that their coffee is great, going with your own brand (at your own risk) would require you to have an average rating of 9 or above in downtown toronto.\n\n", 
             "cell_type": "markdown", 
             "metadata": {}
         }, 
         {
-            "source": "### Coffee Shops in Clusters", 
+            "source": "### Coffee Shop Total", 
             "cell_type": "markdown", 
             "metadata": {}
         }, 
         {
-            "source": "", 
+            "source": "While rating is important, it is also important to understand the total number of coffee shops in each area. \n\n-  There are 6 Starbucks in cluster 2 with great ratings\n-  There are 7 Tim Hortons in cluster 2 with adequate ratings\n\n-  There are 2 Starbucks in cluster 3 with great ratings\n-  There are 5 Tim Hortons in cluster 3 with great ratings\n\nKnowing the 1:1 proportion of having a Starbucks next to each Tim Hortons, it looks like cluster 3 may need more Starbucks locations.\n\n\n\n\n", 
             "cell_type": "markdown", 
             "metadata": {}
         }, 
@@ -354,9 +359,16 @@
             "metadata": {}
         }, 
         {
-            "source": "", 
+            "source": "We started this analysis by knowing nothing about coffee shops in Toronto. After studying the neighborhoods and collecting all coffee shop details from Foursquare API, we can better visualize and cluster Toronto's coffee shop locations based on their surroundings. \n\nAfter analyzing coffee shop ratings, total locations and surroundings, we were able to identify five clusters with several coffee shop brands that compete with famous names like Starbucks or Tim Hortons.\nSo, Starbucks or Tim Hortons? It is not a yes or no answer. An enterpreneur wishing to open a coffee shop in Toronto can open any brand name. They just need to know how competant they are and choose the location based on it. They also need to study the diversity metrics of each cluster and use that to their advantage in selecting what people like to see in their neighborhoods.", 
             "cell_type": "markdown", 
             "metadata": {}
+        }, 
+        {
+            "source": "", 
+            "cell_type": "code", 
+            "metadata": {}, 
+            "outputs": [], 
+            "execution_count": null
         }
     ], 
     "metadata": {
